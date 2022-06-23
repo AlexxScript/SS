@@ -3,3 +3,16 @@
 	padding: 0;
 	margin: 0;
 }
+
+.link{
+	font-size: 20px;
+	color: #005B03;
+	text-decoration: none;
+	margin: 16px;
+	transition: 0.3s;
+}
+
+.link:hover{
+	color: #0087e2;
+	transition: 0.3s;
+}
