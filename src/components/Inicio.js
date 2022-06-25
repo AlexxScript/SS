@@ -8,6 +8,7 @@ const Inicio = () => {
             <ContenedorX>
                 <ContenedorImagen>
                     <img src={img} />
+                    <p>Mente creativa, vida creativa</p>
                 </ContenedorImagen>
                 <Article>
                     <h1>Proposito</h1>
@@ -56,7 +57,9 @@ const ContenedorInicio = styled.div`
     display: flex;
     z-index: 0;
     box-sizing: content-box;
-    background: linear-gradient(270deg, rgba(145, 234, 228, 0.89) 1.25%, rgba(18, 222, 250, 0.89) 46.76%, rgba(136, 206, 255, 0.89) 100%);
+    background: rgb(152,207,227);
+    background: linear-gradient(90deg, rgba(152,207,227,1) 0%, rgba(195,222,232,1) 100%);
+    /* background: linear-gradient(270deg, rgba(145, 234, 228, 0.89) 1.25%, rgba(18, 222, 250, 0.89) 46.76%, rgba(136, 206, 255, 0.89) 100%); */
 `;
 
 const ContenedorX = styled.div`
@@ -68,17 +71,6 @@ const ContenedorX = styled.div`
                         "text text text text";
     margin: 0px auto 50px auto;
 
-    @media (max-width: 768px){
-        max-width: 468px;
-    }
-
-    @media (max-width: 468px){
-        max-width: 390px;
-    }
-
-    @media (max-width: 320px){
-        max-width: 200px;
-    }
 `;
 
 const ContenedorImagen = styled.div`
@@ -87,31 +79,24 @@ const ContenedorImagen = styled.div`
     max-width: 400px;
     max-height: 1050px;
     height: 100%;
+    width: 100%;
     /* top: 15%; */
     justify-content: center;
     align-items: center;
-    margin: 0px auto 80% auto;
+    margin: 0px auto 0px auto;
     grid-area: img;
+    flex-direction: column;
+    font-size: 30px;
+    color: #fff;
 
     &>img{
-        height: 30%;
+        height: 40%;
         width: auto;
     }
 
     @media (max-width: 768px){
-        /* margin-top: 15%; */
-        width: 15%;
-
-            &>img{
-                height: 30%;
-                width: auto;
-            }
-    }
-
-    @media (max-width: 468px){
-        margin-top: 15%;
-        width: 20%;
-        height: 100%;
+        width: 100%;
+        font-size: 15px;
 
             &>img{
                 height: 25%;
@@ -119,14 +104,51 @@ const ContenedorImagen = styled.div`
             }
     }
 
-    @media (max-width: 350px){
+    @media (max-width: 590px){
         margin-top: 15%;
         width: 100%;
         height: 100%;
+        font-size: 13px;
 
             &>img{
-                height: auto;
-                width: 100%;
+                height: 18%;
+                width: auto;
+            }
+    }
+
+    @media (max-width: 450px){
+        margin-top: 15%;
+        width: 100%;
+        height: 100%;
+        font-size: 13px;
+
+            &>img{
+                height: 15%;
+                width: auto;
+            }
+    }
+
+    @media (max-width: 390px){
+        margin-top: 15%;
+        width: 100%;
+        height: 100%;
+        font-size: 11px;
+
+            &>img{
+                height: 10%;
+                width: auto;
+            }
+    }
+
+    @media (max-width: 300px){
+        margin-top: 15%;
+        width: 100%;
+        height: 100%;
+        font-size: 8px;
+
+            &>img{
+                height: 7%;
+                width: auto;
             }
     }
 
@@ -136,7 +158,10 @@ const Article = styled.article`
     display: flex;
     flex-direction: column;
     grid-area: text;
+    max-width: 990px;
     margin: 0px auto;
+    color: #fff;
+    width: 90%;
 
     &>h1{
         font-size: 35px;
@@ -149,14 +174,25 @@ const Article = styled.article`
         z-index: 1;
     }
 
-    &>svg{
-        position: relative;
-        bottom: 70%;
-        right: 40%;
-        z-index: 0;
+    @media (max-width: 970px){
+        width: 90%;
     }
 
-    
+    @media (max-width: 800px){
+        width: 95%;
+    }
+
+    @media (max-width: 560px){
+        width: 85%;
+    }
+
+    @media (max-width: 400px){
+        width: 70%;
+    }
+
+    @media (max-width: 360px){
+        width: 85%;
+    }
 
 `;
 
