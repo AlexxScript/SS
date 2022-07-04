@@ -16,3 +16,8 @@
 	color: #0087e2;
 	transition: 0.3s;
 }
+
+.aparecer{
+	margin-left: 100%;
+	transition: 3s all;
+}
