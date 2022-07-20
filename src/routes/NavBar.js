@@ -14,7 +14,7 @@ const NavBar = () => {
                         <NavLink className="link" to="/informacion">Información</NavLink>
                     </li>
                     <li>
-                        <NavLink className="link" to="consejos">Consejos</NavLink>
+                        <NavLink className="link" to="/consejos">Consejos</NavLink>
                     </li>
                     <li>
                         <NavLink className="link" to="dinamicas">Dinámicas</NavLink>

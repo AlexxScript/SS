@@ -6,6 +6,7 @@ import Informacion from './routes/Informacion';
 import Header from './routes/Header';
 import Footer from './routes/Footer';
 import GALAK from './routes/GALAK.js';
+import Consejos from './routes/Consejos';
 
 function App() {
   return(
@@ -14,7 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/informacion" element={<Informacion />} />
-        <Route path="/consejos" element={<h1>Consejos</h1>} />
+        <Route path="/consejos" element={<Consejos/>} />
         <Route path="/dinamicas" element={<h1>Dinámicas</h1>} />
         <Route path="/GALAK" element={<GALAK/>} />
       </Routes>
