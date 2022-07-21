@@ -4,7 +4,7 @@ import imagen from '../images/vectorInicio.png';
 import { Transition } from 'react-transition-group';
 import { ContenedorInicio,ContenedorX,ContenedorImagen,Article,Contenido } from '../styles/estilos';
 
-const duration = 600;
+const duration = 800;
 
 const defaultStyle = {
     transition: `opacity ${duration}ms ease-in`,

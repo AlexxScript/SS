@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const P = styled.p`
+    margin: 5px;
+`;
+
 export const ContenedorInicio = styled.div`
     display: flex;
     z-index: 0;
@@ -245,6 +249,18 @@ export const ContenedorInformacion = styled(ContenedorInicio)`
 `;
 
 export const IMG = styled.img `
-    /* margin-top: 54px; */
+    margin-top: 54px;
     width: 100%;
 `;      
+
+export const Ul = styled.ul`
+    max-width: 90%;
+    width: 100%;
+    margin: 0px auto;
+`;
+
+export const Ol = styled.ol`
+    max-width: 90%;
+    width: 100%;
+    margin: 0px auto;
+`;
