@@ -1,26 +1,47 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React,{
+  useState,
+  } from 'react';
+import { 
+  Routes, 
+  Route } from 'react-router-dom';
 import './App.css';
 import Inicio from './routes/Inicio';
 import Informacion from './routes/Informacion';
-import Header from './routes/Header';
+import {ContenedorHeader} from './routes/Btn';
 import Footer from './routes/Footer';
-import GALAK from './routes/GALAK.js';
 import Consejos from './routes/Consejos';
+import ScrollToTop from './routes/ScrollToTop';
+import { NavBar } from './routes/NavBar'
+import { Btn } from './routes/Btn'
 
 function App() {
+
+  const [show, setShow] = useState({value:false});
+
+  const mostrar = () => {
+    setShow((config) => {
+      const configuracion = {...config};
+      configuracion.value = !configuracion.value;
+      return configuracion;
+    });
+  }
+
   return(
-    <BrowserRouter>
-    <Header />
+    <ScrollToTop>
+
+      <ContenedorHeader>
+        <Btn click={mostrar} show={show} />
+        <NavBar show={show.value} />
+      </ContenedorHeader>
+
       <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/informacion" element={<Informacion />} />
         <Route path="/consejos" element={<Consejos/>} />
         <Route path="/dinamicas" element={<h1>Dinámicas</h1>} />
-        <Route path="/GALAK" element={<GALAK/>} />
       </Routes>
     <Footer/>
-    </BrowserRouter>
+    </ScrollToTop>
   );
 }
 

@@ -1,26 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+export const NavBar = ({show}) => {
     return (
-        <ContenedorNav>
+        <ContenedorNav show={show}>
             <nav>
                 <Navegador>
                     <li>
-                        <NavLink className="link" to="/">Inicio</NavLink>
+                        <Link className="link" to="/">Inicio</Link>
                     </li>
                     <li>
-                        <NavLink className="link" to="/informacion">Información</NavLink>
+                        <Link className="link" to="/informacion">Información</Link>
                     </li>
                     <li>
-                        <NavLink className="link" to="/consejos">Consejos</NavLink>
+                        <Link className="link" to="/consejos">Consejos</Link>
                     </li>
                     <li>
-                        <NavLink className="link" to="dinamicas">Dinámicas</NavLink>
-                    </li>
-                    <li>
-                        <NavLink className="link" to="GALAK">GALAK</NavLink>
+                        <Link className="link" to="/dinamicas">Dinámicas</Link>
                     </li>
                 </Navegador>
             </nav>
@@ -32,6 +29,16 @@ const ContenedorNav = styled.div`
     max-width: 1050px;
     width: 100%;
     margin: 0px auto;
+
+
+    @media (max-width: 768px){
+        position: fixed;
+        top: 54px;
+        height: 100%;
+        width: 100%;
+        margin-left: ${props =>(props.show ? "0" : "-150%")};
+        transition: 0.3s;
+    }
 `;
 
 const Navegador = styled.ul`
@@ -43,10 +50,9 @@ const Navegador = styled.ul`
         list-style: none;
     }
 
-    @media (max-width: 768px){
+    @media(max-width: 768px){
         flex-direction: column;
-        margin-left: -100%;
+        background: #fff;
     }
-`;
 
-export default NavBar;
+`;
