@@ -13,6 +13,7 @@ import Consejos from './routes/Consejos';
 import ScrollToTop from './routes/ScrollToTop';
 import { NavBar } from './routes/NavBar'
 import { Btn } from './routes/Btn'
+import Dinamicas from './routes/Dinamicas';
 
 function App() {
 
@@ -38,7 +39,7 @@ function App() {
         <Route path="/" element={<Inicio />} />
         <Route path="/informacion" element={<Informacion />} />
         <Route path="/consejos" element={<Consejos/>} />
-        <Route path="/dinamicas" element={<h1>Dinámicas</h1>} />
+        <Route path="/dinamicas" element={<Dinamicas />} />
       </Routes>
     <Footer/>
     </ScrollToTop>
