@@ -2,7 +2,7 @@ import React,{useState,useRef,useEffect} from 'react';
 import img from '../images/logo.png';
 import imagen from '../images/vectorInicio.png';
 import { Transition } from 'react-transition-group';
-import { ContenedorInicio,ContenedorX,ContenedorImagen,Article,Contenido } from '../styles/estilos';
+import { ContenedorInicio,ContenedorX,ContenedorImagen,Article,Contenido,Pa } from '../styles/estilos';
 
 const duration = 800;
 
@@ -49,14 +49,16 @@ const Inicio = () => {
                                 ...defaultStyle,
                                 ...transitionStyles[state]
                             }}>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor sed aliquet pulvinar elit egestas tempor velit commodo turpis.
-                                    Eleifend neque, pretium gravida urna. Auctor commodo pharetra sed vivamus eleifend neque.Lorem ipsum dolor sit amet, 
-                                    consectetur adipiscing elit. Tortor sed aliquet pulvinar elit egestas tempor velit commodo turpis. E
-                                    leifend neque, pretium gravida urna. Auctor commodo pharetra sed vivamus eleifend neque.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Tortor sed aliquet pulvinar elit egestas tempor velit commodo turpis. Eleifend neque, pretium gravida 
-                                    urna. Auctor commodo pharetra sed vivamus eleifend neque.Lorem ipsum dolor sit amet, consectetur 
-                                </p>
+                                <Pa>
+                                    Este proyecto está creado para ayudar a todas las personas a
+                                    desarrollar la creatividad, esta habilidad es tan 
+                                    importante para crear nuevas ideas y solucionar problemas
+                                    en cualquier industria y que actualmente no le hemos dado 
+                                    la importancia que debería tener, es por eso que nuestro 
+                                    objetivo es dar información acerca de la creatividad, 
+                                    consejos de cómo es que podemos aumentar la creatividad 
+                                    e incluir juegos para el desarrollo de la creatividad.
+                                </Pa>
                                 <img src={imagen}></img>
                             </Contenido>
                         )}

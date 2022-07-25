@@ -4,6 +4,10 @@ export const P = styled.p`
     margin: 5px;
 `;
 
+export const Pa = styled.p`
+    font-size: 19px;
+`;
+
 export const ContenedorInicio = styled.div`
     display: flex;
     z-index: 0;
@@ -263,4 +267,98 @@ export const Ol = styled.ol`
     max-width: 90%;
     width: 100%;
     margin: 0px auto;
+`;
+
+//---------------------DINAMICAS---------------------------
+
+export const Questions = styled(Article)`
+    background: #2A2D34;
+    display: grid;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 10px 10px 0px #3D414B;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:"Preguntas Respuestas"
+                        "Preguntas Respuestas" ;
+    
+    @media(max-width: 768px){
+        grid-template-areas:"Preguntas Preguntas"
+                            "Respuestas Respuestas";
+    }
+`;
+
+export const Lista = styled(Article)`
+    margin: 20px auto 20px auto;
+    &>h4{
+        color: #2A2D34;
+    }
+    &>form{
+        height: 500px;
+    }
+`;
+
+export const Preguntass = styled.div`
+    grid-area: Preguntas;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,fr);
+    margin: 30px 0px 0px 30px;
+
+    &>p{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+`;
+
+export const Respuestas = styled.div`
+    grid-area: Respuestas;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+`;
+
+export const Textarea = styled.textarea`
+    margin: 30px auto 30px auto;
+    width: 100%;
+    height: 90%;
+    background: #A9D4E3;
+    border-radius: 7px;
+    border: solid 10px #2A2D34;
+    color: #2A2D34;
+    font-size: 17px;
+    box-shadow: 0px 10px 20px 0px #3D414B;
+    padding: 13px;
+`;
+
+
+//--------------------FOOTER-------------------
+export const ContenedorFooter = styled.footer`
+    background: #FFFFFF;
+    opacity: 0.7;
+`;
+
+export const ContenidoFooter = styled(Article)`
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    color: #2A2D34;
+`;
+
+export const ContenidosHijos = styled.div`
+    margin-bottom: 20px; 
+    &>h1{
+        margin: 20px 0px;
+    }
+    &>p{
+        margin: 10px 0px; 
+    }
+    &>a{
+        margin: 5px 0px;
+        display: block;
+        font-size: 18px;
+    }
 `;

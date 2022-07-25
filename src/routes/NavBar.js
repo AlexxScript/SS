@@ -34,7 +34,6 @@ const ContenedorNav = styled.div`
     @media (max-width: 768px){
         position: fixed;
         top: 54px;
-        height: 100%;
         width: 100%;
         margin-left: ${props =>(props.show ? "0" : "-150%")};
         transition: 0.3s;
@@ -52,7 +51,8 @@ const Navegador = styled.ul`
 
     @media(max-width: 768px){
         flex-direction: column;
-        background: #fff;
+        background: #FFFFFF;
+        opacity: 0.7;
     }
 
 `;

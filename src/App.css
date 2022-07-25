@@ -4,6 +4,10 @@
 	margin: 0;
 }
 
+body{
+    background: linear-gradient(90deg, rgba(152,207,227,1) 0%, rgba(195,222,232,1) 100%);
+}
+
 .link{
 	font-size: 20px;
 	color: #000;
@@ -91,4 +95,12 @@
 .btnQ:hover{
 	background: #40798C;
     transition: 0.3s;
+}
+
+.linkD{
+    color: #fff;
+}
+
+.linkD:hover{
+    color: #2F2E41;
 }

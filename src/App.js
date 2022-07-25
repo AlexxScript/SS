@@ -14,6 +14,7 @@ import ScrollToTop from './routes/ScrollToTop';
 import { NavBar } from './routes/NavBar'
 import { Btn } from './routes/Btn'
 import Dinamicas from './routes/Dinamicas';
+import log from './images/log.png';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
     <ScrollToTop>
 
       <ContenedorHeader>
+        {/* <a href='/'><img className="imagen" src={log} /></a> */}
         <Btn click={mostrar} show={show} />
         <NavBar show={show.value} />
       </ContenedorHeader>
