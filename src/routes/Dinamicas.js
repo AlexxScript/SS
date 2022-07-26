@@ -49,7 +49,7 @@ const Dinamicas = () => {
                     respuestas correctas {puntuacion} de {preguntas.length}
                 </h2>
                 <h2>
-                    <button className="btnQ" onClick={() => window.location.href="/dinamicas"}> ¿Desea intentarlo de nuevo? </button>
+                <Link className="linkD" to="/">Regresar</Link>
                 </h2>
             </div>
             
