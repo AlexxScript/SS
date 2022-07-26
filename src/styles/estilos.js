@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const P = styled.p`
     margin: 5px;
+    text-align: justify;
 `;
 
 export const Pa = styled.p`
@@ -261,12 +262,18 @@ export const Ul = styled.ul`
     max-width: 90%;
     width: 100%;
     margin: 0px auto;
+    &>li{
+        text-align: justify;
+    }
 `;
 
 export const Ol = styled.ol`
     max-width: 90%;
     width: 100%;
     margin: 0px auto;
+    &>li{
+        text-align: justify;
+    }
 `;
 
 //---------------------DINAMICAS---------------------------
@@ -346,19 +353,30 @@ export const ContenidoFooter = styled(Article)`
     grid-template-columns: repeat(2,1fr);
     justify-content: space-between;
     color: #2A2D34;
+
+    @media(max-width: 768px){
+        grid-template-columns: repeat(1,1fr);
+    }
 `;
 
 export const ContenidosHijos = styled.div`
     margin-bottom: 20px; 
+    padding: 15px;
     &>h1{
         margin: 20px 0px;
     }
     &>p{
         margin: 10px 0px; 
+        text-align: justify;
     }
     &>a{
         margin: 5px 0px;
         display: block;
         font-size: 18px;
+        color: #2A2D34;
+        text-decoration: none;
+    }
+    &>a:hover{
+        color: #99cfe3;
     }
 `;

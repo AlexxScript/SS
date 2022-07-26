@@ -97,10 +97,26 @@ body{
     transition: 0.3s;
 }
 
+.btnQInorrecta:hover{
+	background: #FF5E84;
+    transition: 0.3s;
+}
+
+.btnQCorrecta:hover{
+	background: #61FF5E;
+    transition: 0.3s;
+}
+
 .linkD{
     color: #fff;
 }
 
 .linkD:hover{
     color: #2F2E41;
+}
+
+@media (max-width: 768px) {
+    .elemen{
+        flex-direction: column;
+    }
 }

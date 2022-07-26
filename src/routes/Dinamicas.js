@@ -38,7 +38,7 @@ const Dinamicas = () => {
             }else{
                 setPreguntaActual(preguntaActual+1);
             }
-        },1500)
+        },1000)
 
     }
 
@@ -49,7 +49,7 @@ const Dinamicas = () => {
                     respuestas correctas {puntuacion} de {preguntas.length}
                 </h2>
                 <h2>
-                    <button className="btnQ" onClick={() => window.location.href="/dinamicas"}> ¿Desea intentarlo de nuevo? </button>
+                    <button className="btnQ" onClick={() => window.location.href="/dinamicas#/"}> ¿Desea intentarlo de nuevo? </button>
                 </h2>
             </div>
             
