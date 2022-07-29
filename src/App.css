@@ -115,6 +115,19 @@ body{
     color: #2F2E41;
 }
 
+.enviar{
+    background: #fff;
+    color: #2A2D34;
+    border: solid 3px #707788;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    border: solid 3px #707788;
+    transition: all .3s;
+}
+
 @media (max-width: 768px) {
     .elemen{
         flex-direction: column;

@@ -9,6 +9,7 @@ import Inicio from './routes/Inicio';
 import Informacion from './routes/Informacion';
 import {ContenedorHeader} from './routes/Btn';
 import Footer from './routes/Footer';
+import {Formulario} from './routes/Formulario';
 import Consejos from './routes/Consejos';
 import ScrollToTop from './routes/ScrollToTop';
 import { NavBar } from './routes/NavBar'
@@ -40,6 +41,7 @@ function App() {
         <Route path="/informacion" element={<Informacion />} />
         <Route path="/consejos" element={<Consejos/>} />
         <Route path="/dinamicas" element={<Dinamicas />} />
+        <Route path="/formulario" element={<Formulario />} />
       </Routes>
     <Footer/>
     </ScrollToTop>

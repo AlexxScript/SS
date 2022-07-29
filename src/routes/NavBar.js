@@ -19,6 +19,9 @@ export const NavBar = ({show}) => {
                     <li>
                         <Link className="link" to="/dinamicas">Dinámicas</Link>
                     </li>
+                    <li>
+                        <Link className="link" to="/formulario">Contáctanos</Link>
+                    </li>
                 </Navegador>
             </nav>
         </ContenedorNav>
